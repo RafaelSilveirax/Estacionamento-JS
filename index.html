@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Estacionamento JS</title>
+</head>
+<body>
+
+    <div id="marca">
+        <h1>Garagem Raff Silveira</h1>
+    </div>
+
+
+    <div id="Binput">
+
+        <input type="text" id="name" placeholder="digite o nome do veículo" autocomplete="off">
+        <input type="text" id="licence" name="placa" onkeyup="validarPlaca(this)" placeholder="" autocomplete="off" maxlength="8"> 
+        <button id="send">Registar</button>
+    </div>
+
+    <table id="tabela">
+        <thead>
+            <tr>
+                <th>veículo</th>
+                <th>placa</th>
+                <th>Horário</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="garage"></tbody>
+    </table>
+</body>
+<script src="main.js"></script>
+
+</html>
